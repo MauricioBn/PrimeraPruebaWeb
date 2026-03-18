@@ -1,10 +1,10 @@
 const hora = new Date().getHours(); // Para obtener la hora actual de 0 - 23 
 
-if (0 <= hora <= 5) {
+if (hora >= 0 && hora <=5) {
     document.title = "Trasnochando! - Carbajal Services";    
-} else if (5 < hora <= 12) {
+} else if (hora > 5 && hora <= 12) {
     document.title = "¡Buenos dias! - Carbajal Services";
-} else if (12 < hora <= 17) {
+} else if (hora > 12 && hora <= 17) {
     document.title = "¡Buenas tardes! - Carbajal Services";
 } else {
     document.title = "¡Buenas noches! - Carbajal Services";
