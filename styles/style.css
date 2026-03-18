@@ -1,0 +1,38 @@
+
+html {
+  background-color: gainsboro; /* Esto es para darle color al fondo de la pagina*/ 
+  font-family: 'Barlow Condensed', sans-serif; /*Esto es para el tipo de letra */ 
+}
+
+h1 {
+    margin: 0 0;
+    font-size: 60px;
+    text-align: center; /* Definir si va al medio, izq o derec*/
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0 0;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 25px
+}
+
+img {/*Centrar la imagen*/ 
+    display: block; 
+    margin: 0 0 0 auto;
+}
+
+
+#saludo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+body {
+    position: relative;
+}
