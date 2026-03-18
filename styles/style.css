@@ -4,24 +4,53 @@ html {
   font-family: 'Barlow Condensed', sans-serif; /*Esto es para el tipo de letra */ 
 }
 
-h1 {
-    margin: 0 0;
-    font-size: 60px;
-    text-align: center; /* Definir si va al medio, izq o derec*/
+.barra-superior {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 5px 5px 0px;
+    margin: 0;
+    gap: 1px;
+    background-color: #122338;
+    width: 100%;
+    padding-top: 20px;    /* ← espacio arriba del contenido */
+    padding-left: 10px;   /* ← espacio a la izquierda */
+    height: 120px;
 }
 
-h2 {
-    font-size: 30px;
-    margin: 0 0;
-    text-align: center;
+#logo-principal {
+    width: 70px;      /* ← ajusta este valor al tamaño que quieras */
+    height: auto;
+    margin: 0;
+    flex-shrink: 0;
+    margin-left: 10px;    /* ← mueve el logo a la izquierda desde el borde */
 }
+
+.contenedor-titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-left: 5px;     /* ← reduce la distancia entre logo y títulos */
+    flex: 1px;
+    color: #EBE7D9;
+}
+
+.contenedor-titulos h2 {
+    margin-top: 0px;
+    margin-left: 0;
+}
+
+.contenedor-titulos h1 {
+    margin-bottom: 0px;
+}
+
 
 p,
 li {
     font-size: 25px
 }
 
-img {/*Centrar la imagen*/ 
+.tarjeta-negocio {/*Centrar la imagen*/ 
     display: block; 
     margin: 0 0 0 auto;
 }
@@ -29,10 +58,21 @@ img {/*Centrar la imagen*/
 
 #saludo {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 50px;
+    color: #EBE7D9;
+    padding-top: 30px;    /* ← espacio arriba del contenido */
+    padding-left: 10px;   /* ← espacio a la izquierda */
 }
 
 body {
+    padding: 0;
     position: relative;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

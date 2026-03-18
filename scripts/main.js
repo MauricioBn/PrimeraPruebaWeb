@@ -30,7 +30,7 @@ function estableceNombreUsuario() {
     estableceNombreUsuario();
   } else {
     localStorage.setItem("nombre", miNombre)
-    TituloPag.innerHTML = "Bienvenido " + miNombre;
+    TituloPag.innerHTML = "Bienvenido, " + miNombre;
   }
 }
 
