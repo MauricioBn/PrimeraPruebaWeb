@@ -31,18 +31,53 @@ html {
     justify-content: center;
     text-align: left;
     margin-left: 5px;     /* ← reduce la distancia entre logo y títulos */
-    flex: 1px;
     color: #EBE7D9;
+    flex-shrink: 0;
 }
 
 .contenedor-titulos h2 {
     margin-top: 0px;
     margin-left: 0;
+    font-size: 20px;
 }
 
 .contenedor-titulos h1 {
     margin-bottom: 0px;
+    font-size: 30px;
 }
+
+.navegacion { 
+    display: flex; /* ← pone los enlaces en fila horizontal */
+    gap: 100px; /* ← espacio entre cada enlace */
+    align-items: center; /* ← centra verticalmente los enlaces en la barra */
+    align-self: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 30px;
+}
+
+#saludo {
+    color: #EBE7D9;
+    font-size: 25px;
+    align-self: center;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    margin-left: auto;  /* ← lo empuja a la derecha del todo */
+}
+
+.navegacion a {
+    color: #EBE7D9;          /* ← color del texto */
+    text-decoration: none;   /* ← quita el subrayado de los enlaces */
+    font-size: 23px;         /* ← tamaño del texto */
+    order: 1;
+}
+
+.navegacion a:hover {
+    color: #ffffff;          /* ← color al pasar el mouse por encima */
+}
+
+
 
 
 p,
@@ -56,14 +91,6 @@ li {
 }
 
 
-#saludo {
-    position: absolute;
-    top: 0px;
-    right: 50px;
-    color: #EBE7D9;
-    padding-top: 30px;    /* ← espacio arriba del contenido */
-    padding-left: 10px;   /* ← espacio a la izquierda */
-}
 
 body {
     padding: 0;
