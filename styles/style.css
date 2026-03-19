@@ -23,6 +23,7 @@ html {
     margin: 0;
     flex-shrink: 0;
     margin-left: 10px;    /* ← mueve el logo a la izquierda desde el borde */
+    padding-top: 13px;
 }
 
 .contenedor-titulos {
@@ -33,50 +34,67 @@ html {
     margin-left: 5px;     /* ← reduce la distancia entre logo y títulos */
     color: #EBE7D9;
     flex-shrink: 0;
+    flex: 1;
 }
 
 .contenedor-titulos h2 {
+    padding-top: 3px;
     margin-top: 0px;
     margin-left: 0;
-    font-size: 20px;
+    font-size: 15px;
+    font-family: 'Playfair-Display';
 }
 
 .contenedor-titulos h1 {
+    padding-top: 10px;
+    margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Playfair-Display';
 }
 
 .navegacion { 
     display: flex; /* ← pone los enlaces en fila horizontal */
-    gap: 100px; /* ← espacio entre cada enlace */
+    gap: 80px; /* ← espacio entre cada enlace */
     align-items: center; /* ← centra verticalmente los enlaces en la barra */
     align-self: center;
     position: absolute;
-    left: 50%;
+    left: 56%;
     transform: translateX(-50%);
     padding-bottom: 30px;
 }
 
-#saludo {
-    color: #EBE7D9;
-    font-size: 25px;
-    align-self: center;
-    padding-right: 60px;
-    padding-bottom: 30px;
-    margin-left: auto;  /* ← lo empuja a la derecha del todo */
-}
+
 
 .navegacion a {
     color: #EBE7D9;          /* ← color del texto */
     text-decoration: none;   /* ← quita el subrayado de los enlaces */
-    font-size: 23px;         /* ← tamaño del texto */
+    font-size: 20px;         /* ← tamaño del texto */
     order: 1;
+    font-family: 'Playfair-Display';
 }
 
 .navegacion a:hover {
     color: #ffffff;          /* ← color al pasar el mouse por encima */
 }
 
+#logo-wsp {
+    width: 30px;      /* ← ajusta este valor al tamaño que quieras */
+    height: auto;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 10px;
+    padding-top: 20px;
+    margin-right: 30px;
+}
+
+#logo-gmail {
+    width: 30px;      /* ← ajusta este valor al tamaño que quieras */
+    height: auto;
+    align-self: center;
+    margin-right: 20px;
+    padding-top: 25px;
+}
 
 
 
@@ -84,12 +102,6 @@ p,
 li {
     font-size: 25px
 }
-
-.tarjeta-negocio {/*Centrar la imagen*/ 
-    display: block; 
-    margin: 0 0 0 auto;
-}
-
 
 
 body {
