@@ -115,3 +115,23 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* Apartir de acá comienza el contenido*/ 
+
+.frase-inicial {
+    font-size: 35px;
+    color: #000000;
+    font-family: 'Rajdhani';
+    font-weight: normal;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#descripcion-principal {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Rajdhani';
+    padding-left: 30px;
+    padding-top: 20px;
+}
