@@ -79,23 +79,6 @@ html {
     color: #ffffff;          /* ← color al pasar el mouse por encima */
 }
 
-/*#logo-wsp {
-    /*width: 30px;      /* ← ajusta este valor al tamaño que quieras */
-    /*height: auto;
-    align-self: center;
-    margin-left: auto;
-    margin-right: 10px;
-    padding-top: 20px;
-    margin-right: 30px;*/
-
-
-/*#logo-gmail {
-    /*width: 30px;      /* ← ajusta este valor al tamaño que quieras */
-    /*height: auto;
-    align-self: center;
-    margin-right: 20px;
-    padding-top: 25px;*/
-
 
 
 p,
@@ -211,7 +194,7 @@ body {
 
 
 /*SEPARADOR*/ 
-.divisor {
+.divisor-1 {
     border: none;
     height: 3px;
     background-color: #333;
@@ -266,12 +249,139 @@ body {
     line-height: 1.6;       /* ← más espacio entre líneas, más legible */
 }
 
-.nuestros-servicios {
+.nuestros-servicios h3 {
     font-size: 50px;
     color: #BDAD1D;
     font-family: 'Playfair-Display';
-    font-weight: normal;
+    font-weight: 700;
     padding-left: 526px;
     padding-top: 50px;
     /*word-spacing: 15px;*/
+}
+
+/*SEPARADOR*/ 
+.divisor-2 {
+    border: none;
+    height: 3px;
+    background-color: #333;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+
+/*diferencial*/
+.frase-diferencial {
+    font-size: 40px;
+    color: #19334C;
+    font-family: 'Playfair-Display';
+    font-weight: normal;
+    padding-top: 30px;
+    font-weight: 500;
+}
+
+#descripcion-diferencial {
+    font-size: 20px;
+    color: #000;
+    font-family: 'Playfair-Display';
+    padding-top: 20px;
+    line-height: 1.6;
+    max-width: 660px;
+    margin-bottom: 100px;
+}
+
+.seccion-diferencial {
+    display: flex;              /* ← cambia block por flex */
+    justify-content: space-between;  /* ← separa los elementos */
+    align-items: center;        /* ← centra verticalmente */
+    padding: 80px 50px;
+}
+
+.diferencial-texto {
+    flex: 1;
+    margin-left: 80px;
+    margin-top: -60px;
+}
+
+#pregunta-dif {
+    display: flex;
+    flex-direction: column;   /* ← pregunta y botón uno debajo del otro */
+    align-items: flex-end;    /* ← alinea todo a la derecha */
+    gap: 30px;
+    margin-right: 100px;
+    margin-top: -120px;    
+    font-size: 40px;
+    color: #122338;
+    font-family: 'Playfair-Display';
+    text-align: center;
+    font-weight: normal;
+}
+
+.boton-agendar {
+    border: none;        /* ← quita el borde del botón */
+    cursor: pointer;     /* ← muestra la manito al pasar el mouse */
+    font-family: 'Playfair-Display';
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #BDAD1D;
+    border-radius: 8px;
+    margin-left: 30px;
+    margin-top: 15px;
+    padding: 20px 40px;
+}
+
+
+/*parte final-Home*/
+.final-home {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #122338;
+    padding-right: 220px;
+    justify-content: flex-end;
+    margin-top: -150px;
+}
+
+.logo-finalpag {
+    width: 80px;      /* ← ajusta este valor al tamaño que quieras */
+    height: auto;
+    margin: 0;
+    flex-shrink: 0;
+    padding-top: 9px;
+}
+
+.titulofinal-home {
+    font-family: 'Playfair-Display';
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/*email-wsp*/
+.email-wsp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#logo-wsp {
+    width: 120px;      /* ← ajusta este valor al tamaño que quieras */
+    margin-right: 20px;
+    /*height: auto;
+    align-self: center;
+    margin-left: auto;
+
+    padding-top: 20px;
+    margin-right: 30px;*/
+}
+
+#logo-gmail {
+    width: 120px;      /* ← ajusta este valor al tamaño que quieras */
+    /*height: auto;
+    align-self: center;
+    margin-right: 20px;
+    padding-top: 25px;*/
 }
