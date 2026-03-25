@@ -12,3 +12,11 @@ if (hora >= 0 && hora <=5) {
 
 
 
+document.querySelector('#btn-agendar').onclick = function() {
+    window.open('https://wa.me/51967512661', '_blank');
+}
+
+
+document.querySelector('#btn-citas').onclick = function() {
+    window.open('https://wa.me/51967512661', '_blank');
+}
