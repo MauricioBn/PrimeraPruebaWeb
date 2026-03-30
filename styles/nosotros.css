@@ -1,0 +1,101 @@
+html {
+  font-family: 'Nunito';
+}
+
+
+.imagen-fondo {
+  display: flex;
+  align-items: flex-start;
+  background-image: url('../images/imagen-nosotros.jpg');
+  background-size: cover;      /* ← cubre toda la sección */
+  background-position: center; /* ← centra la imagen */
+  background-repeat: no-repeat;/* ← no repite la imagen */
+  padding-bottom: 250px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.valores {
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 110px;
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+
+.valores a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.icon-valores {
+  width: 110px;
+  padding-left: 0;
+  margin-bottom: 15px; /* Espacio entre icono y texto en lugar de usar <br> */
+
+}
+
+.texto-valores { 
+  display: block; /* Para que tome todo el ancho y el centrado funcione */
+  text-align: center;
+  font-family: 'Nunito';
+  text-shadow:2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cuadros-nosotros {
+  display: flex;              /* ← cambia block por flex */
+  flex-direction: row;        /* Alinea en fila */
+  justify-content: space-between;  /* ← separa los elementos */
+  align-items: center;        /* ← centra verticalmente */
+  padding: 80px 150px;
+  gap: 50px;
+}
+
+.contenido-texto-nosotros {
+  flex: 1;                  /* Hace que el texto tome el espacio disponible */
+}
+
+.encabezados {
+  font-size: 40px;
+  text-shadow:2px 2px 8px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+
+.descrip-encabezados {
+  font-size: 20px;
+  max-width: 668px;
+  line-height: 1.5;
+}
+
+.imagen-ppst { 
+  width: 400px;
+  border-radius: 15px;       /* Un toque extra: bordes redondeados para elegancia */
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.2); /* Le da profundidad */
+}
+
+.cuadros-nosotros-invertido {
+  display: flex;              /* ← cambia block por flex */
+  flex-direction: row-reverse;        /* Alinea en fila */
+  justify-content: space-between;  /* ← separa los elementos */
+  align-items: center;        /* ← centra verticalmente */ 
+  padding: 80px 150px;
+  gap: 50px;
+}
+
+.barra-inferior { 
+    background-color: #6D644A;
+    padding: 20px 0;
+}
+
+
+
+.descrp-final {
+    text-align: center;
+    margin-top: 10px;
+    color: #EBE7D9;
+    font-size: 14px;
+}

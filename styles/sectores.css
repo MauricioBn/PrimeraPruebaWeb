@@ -1,0 +1,24 @@
+html {
+    font-family: 'Nunito';
+}
+
+
+.imagen-sectores {
+    display: flex;
+    align-items: flex-start;
+    background-image: url('../images/imagen-sectores.jpg');
+    background-size: cover;      /* ← cubre toda la sección */
+    background-position: center; /* ← centra la imagen */
+    background-repeat: no-repeat;/* ← no repite la imagen */
+    padding-bottom: 250px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.nuestras-esp h3 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 120px;
+    font-weight: normal;
+}

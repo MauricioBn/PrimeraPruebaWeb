@@ -1,7 +1,7 @@
 
 html {
-  background-color: #ffffff; /* Esto es para darle color al fondo de la pagina*/ 
-  font-family: 'Barlow Condensed', sans-serif; /*Esto es para el tipo de letra */ 
+    background-color: #ffffff; /* Esto es para darle color al fondo de la pagina*/ 
+    font-family: 'Nunito', sans-serif; /*Esto es para el tipo de letra */ 
 }
 
 .barra-superior {
@@ -114,8 +114,8 @@ body {
 }
 
 .texto-destacado { 
-    color: #F2BA11;  /* ← el color que quieras */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);  /* ← así es correcto */
+  color: #F2BA11;  /* ← el color que quieras */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);  /* ← así es correcto */
 }
 
 #descripcion-principal {
@@ -133,20 +133,22 @@ body {
 }
 
 .boton {
-    border: none;        /* ← quita el borde del botón */
-    cursor: pointer;     /* ← muestra la manito al pasar el mouse */
-    padding: 15px 25px;
-    background-color: #8D8881;
-    border-radius: 8px;
-    color: white;
-    font-size: 16px;
-    font-family: 'Nunito';
-    letter-spacing: 2px;
-    margin-top: 80px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 80px;
+  display: block;
+  border: none;        /* ← quita el borde del botón */
+  cursor: pointer;     /* ← muestra la manito al pasar el mouse */
+  padding: 15px 25px;
+  background-color: #8D8881;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-family: 'Nunito';
+  letter-spacing: 2px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: 345px;
 }
+
+
 
 .boton:hover {
     background-color: #724502;  /* ← se oscurece al pasar el mouse */
@@ -171,7 +173,7 @@ body {
 .seccion-principal {
     display: flex;
     align-items: flex-start;
-    background-image: url('../images/imagen-fondo.jpg');
+    background-image: url('../images/imagen-fondo2.jpg');
     background-size: cover;      /* ← cubre toda la sección */
     background-position: center; /* ← centra la imagen */
     background-repeat: no-repeat;/* ← no repite la imagen */
@@ -366,11 +368,14 @@ body {
 .final-home {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    color: #122338;
-    padding-right: 220px;
-    justify-content: flex-end;
-    margin-top: -150px;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo-finalpag {
@@ -378,12 +383,28 @@ body {
     height: auto;
     margin: 0;
     flex-shrink: 0;
-    padding-top: 9px;
 }
 
 .titulofinal-home {
     font-family: 'Nunito';
-    margin-top: 30px;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin: 0;
+    color: #EBE7D9;
+}
+
+
+.barra-inferior { 
+    background-color: #6D644A;
+    padding: 20px 0;
+}
+
+.descrp-final {
+    text-align: center;
+    margin-top: 10px;
+    color: #EBE7D9;
+    font-size: 14px;
+}
+
+#logo-final {
+    width: 70px;
 }
