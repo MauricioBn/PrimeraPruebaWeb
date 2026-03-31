@@ -1,410 +1,354 @@
 
 html {
-    background-color: #ffffff; /* Esto es para darle color al fondo de la pagina*/ 
-    font-family: 'Nunito', sans-serif; /*Esto es para el tipo de letra */ 
+    background-color: #ffffff;              /* Esto es para darle color al fondo de la pagina*/ 
+    font-family: 'Nunito', sans-serif;        /*Esto es para el tipo de letra */ 
 }
 
-.barra-superior {
-    display: flex;
-    align-items: flex-start;
-    padding: 10px 5px 5px 0px;
-    margin: 0;
-    gap: 1px;
-    background-color: #6D644A;
-    width: 100%;
-    padding-top: 5px;    /* ← espacio arriba del contenido */
-    padding-left: 80px;   /* ← espacio a la izquierda */
-    height: 80px;
-}
-
-#logo-principal {
-    width: 80px;      /* ← ajusta este valor al tamaño que quieras */
-    height: auto;
-    margin: 0;
-    flex-shrink: 0;
-    margin-left: 10px;    /* ← mueve el logo a la izquierda desde el borde */
-    padding-top: 9px;
-}
-
-.contenedor-titulos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    margin-left: 5px;     /* ← reduce la distancia entre logo y títulos */
-    color: #EBE7D9;
-    flex-shrink: 0;
-    flex: 1;
-}
-
-.contenedor-titulos h2 {
-    padding-top: 3px;
-    margin-top: 0px;
-    margin-left: 0;
-    font-size: 15px;
-    font-family: 'Nunito';
-}
-
-.contenedor-titulos h1 {
-    padding-top: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 20px;
-    font-family: 'Nunito';
-}
-
-.navegacion { 
-    display: flex; /* ← pone los enlaces en fila horizontal */
-    gap: 30px; /* ← espacio entre cada enlace */
-    align-items: center; /* ← centra verticalmente los enlaces en la barra */
-    align-self: center;
-    position: absolute;
-    left: 59%;
-    transform: translateX(-50%);
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-
-.navegacion a {
-    color: #EBE7D9;          /* ← color del texto */
-    text-decoration: none;   /* ← quita el subrayado de los enlaces */
-    font-size: 20px;         /* ← tamaño del texto */
-    order: 1;
-    font-family: 'Nunito';
-}
-
-.navegacion a:hover {
-    color: #ffffff;          /* ← color al pasar el mouse por encima */
-}
-
-
-
-p,
-li {
-    font-size: 25px
-}
-
-
-body {
-    padding: 0;
-    position: relative;
-
-}
-
+/* Esto selecciona absolutamente todo y le quita los espacios por defecto */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;                   /* Esto ayuda a que el padding no ensanche tus cajas */
 }
 
+body {
+    background: linear-gradient(180deg, #fff 50%, #c7bb6a 100%);
+}
+/*--------------------------------*/
+/*HEADER*/
+/*--------------------------------*/
 
-/* Apartir de acá comienza el contenido*/ 
 
-.frase-inicial {
-    font-size: 50px;
-    color: #EBE7D9;
-    font-family: 'Nunito';
-    font-weight: normal;
-    padding-top: 0px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);  /* ← así es correcto */
-    text-align: center;
-    margin-top: 50px;
+.hero-container {
+    background-image:url('../images/imagen-fondo-inicio.jpg');
+    background-size: cover;
+    background-position: center 90%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.texto-destacado { 
-  color: #F2BA11;  /* ← el color que quieras */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);  /* ← así es correcto */
-}
-
-#descripcion-principal {
-    font-size: 23px;
-    color: #ffffff;
-    font-family: 'Nunito';
-    padding-top: 20px;
-    line-height: 1.6;
-    max-width: 800px;
-    font-weight: 600;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);  /* ← así es correcto */
-    text-align: center;
-    font-weight: 800;
-    margin-left: 50px;
-}
-
-.boton {
-  display: block;
-  border: none;        /* ← quita el borde del botón */
-  cursor: pointer;     /* ← muestra la manito al pasar el mouse */
-  padding: 15px 25px;
-  background-color: #8D8881;
-  border-radius: 8px;
-  color: white;
-  font-size: 16px;
-  font-family: 'Nunito';
-  letter-spacing: 2px;
-  margin-top: 80px;
-  margin-left: auto;
-  margin-right: 345px;
-}
-
-
-
-.boton:hover {
-    background-color: #724502;  /* ← se oscurece al pasar el mouse */
-}
-
-.boton-citas {
-    border: none;        /* ← quita el borde del botón */
-    cursor: pointer;     /* ← muestra la manito al pasar el mouse */
-    font-family: 'Nunito';
-    color: white;
-    font-size: 16px;
-    letter-spacing: 2px;
-    background-color: #ffaa2bc4;
-    border-radius: 8px;
-    margin-right: 120px;
-    margin-top: 15px;
+.barra-inicial {
+    border-radius: 19px;
+    background: linear-gradient(90deg, #997336 0%, #928F66 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin: 15px auto;
     padding: 10px 25px;
+    min-height: 55px;
 }
 
+.bloque-identidad {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
+
+.nombre-empresa{
+    margin: 0;
+    line-height: 1.1;
+    color: #EBE7D9;
+    font-weight: 600;
+}
+
+.nombre-brand {
+    font-size: 20px;
+}
+
+.subtitulo-brand {
+    font-size: 15px;
+}
+
+#logo-principal {
+    height: 50px;
+}
+
+
+.navegacion { 
+    display: flex;                /* ← pone los enlaces en fila horizontal*/
+    gap: 40px;                    /* ← espacio entre cada enlace*/
+    align-items: center;          /* ← centra verticalmente los enlaces en la barra*/
+}
+
+.navegacion a {
+    color: #EBE7D9;             /* ← color del texto*/
+    text-decoration: none;        /* ← quita el subrayado de los enlaces*/
+    font-size: 20px;              /* ← tamaño del texto*/
+    order: 1;
+}
+
+
+.btn-asesoria {
+    background-color: #F8BF04;  /* El naranja/dorado de tu Figma */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 40px;
+    word-spacing: 30%;
+    letter-spacing: 2px;
+}
+
+.btn-asesoria:hover {
+    background-color: #d49a3d;   /* Se oscurece un poco al pasar el mouse */
+}
+
+
+/*--------------------------------*/
+/*SECCIÓN PRINCIPAL*/
+/*--------------------------------*/
 
 
 .seccion-principal {
+    flex-grow: 1;               /* Toma todo el espacio que sobra debajo de la barra */
     display: flex;
-    align-items: flex-start;
-    background-image: url('../images/imagen-fondo2.jpg');
-    background-size: cover;      /* ← cubre toda la sección */
-    background-position: center; /* ← centra la imagen */
-    background-repeat: no-repeat;/* ← no repite la imagen */
-    padding-bottom: 250px;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.contenido-texto { 
-    max-width: 1000px;       /* ← ancho máximo del contenido */
-    margin: 0 auto;         /* ← centra el contenedor */
-    padding-top: 120px;
+    justify-content: center;    /* Centra el texto horizontalmente */
+    align-items: center;        /* Centra el texto verticalmente */
+    text-align: center;         /* Alinea las letras al centro */
+    margin-bottom: 300px;
 }
 
 
-/*Atributos*/
-
-.seccion-atributos {
-    display: flex;
-    gap: 100px;
-    padding-top: 80px;
-    justify-content: center;
-    padding-bottom: 80px;
+.contenido-principal {
+    max-width: 900px;           /* Evita que la frase se estire demasiado a lo ancho */
 }
 
-.atributo-numero {
-    font-size: 80px;
-    color: #000000cd;
-    font-family: 'Nunito';
-    padding-left: 50px;
-}
-
-.atributo-descripcion {
-    font-size: 20px;
-    color: #000;
-    font-family: 'Nunito';
-}
-
-
-/*SEPARADOR*/ 
-.divisor-1 {
-    border: none;
-    height: 3px;
-    background-color: #333;
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-/*Relleno*/
-
-.contenedor-cuadros {
-    display: flex;
-    gap: 30px;
-    padding-top: 80px;
-    justify-content: center;
-    padding-bottom: 80px;
-    flex-wrap: wrap;
-    font-family: 'Nunito';
-}
-
-.contenedor-cuadros a {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    padding: 30px;
-    width: 300px;             /* ← ancho fijo para cada cuadro */
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.2s;
-    border-top: 4px solid #19334C;
-    text-align: center;
-}
-
-.contenedor-cuadros a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.titulo-cuadro {
-    color: #000;
-    font-size: 20px;
-    display: block;
-    margin-bottom: 10px;
-
-}
-
-.descripcion-cuadro {
-    display: block;
-    font-size: 15px;
-    color: #555;            /* ← gris para diferenciarla del título */
-    font-family: 'Nunito';
-    line-height: 1.6;       /* ← más espacio entre líneas, más legible */
-}
-
-.nuestros-servicios h3 {
-    font-size: 50px;
-    color: #ffaa2bc4;
-    font-family: 'Nunito';
-    font-weight: 700;
-    padding-left: 495px;
-    padding-top: 50px;
-    word-spacing: 12px;
-    /*word-spacing: 15px;*/
-}
-
-.desc-SE {
-    font-size: 30px;
-    color: #292525;
-    font-family: 'Nunito';
-    font-weight: 700;
-    padding-top: 50px;
-    word-spacing: 4px;
-    text-align: center;
-}
-
-/*SEPARADOR*/ 
-.divisor-2 {
-    border: none;
-    height: 3px;
-    background-color: #333;
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 80px;
-    margin-top: 30px;
-}
-
-
-/*diferencial*/
-.frase-diferencial {
-    font-size: 40px;
-    color: #19334C;
-    font-family: 'Nunito';
+.frase-principal {
+    font-size: 40px;            /* Tamaño grande para impacto */
+    color:#EBE7D9;
+    line-height: 1.2;
     font-weight: normal;
-    padding-top: 30px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.texto-destacado {
+    color: #F8BF04;            /* El dorado de tu marca para "gasto" e "inversión" */
+}
+
+.descripcion-principal {
+    font-size: 20px;          
+    color:#EBE7D9;
+    margin-top: 20px;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn-ecosistemas {
+    background-color: #F8BF04;  /* El naranja/dorado de tu Figma */
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    letter-spacing: 5px;
+    margin-top: 28px;
+    margin-left: 24px;
+    display: inline-block;
+}
+
+.btn-ecosistemas:hover {
+    background-color: #d49a3d;   /* Se oscurece un poco al pasar el mouse */
+}
+
+
+/*--------------------------------*/
+/*METRICAS*/
+/*--------------------------------*/
+
+
+.seccion-metricas {
+    background-color: #ffffff;   /* Fondo blanco puro como en Figma */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contenedor-metricas {
+    display: flex;
+    justify-content: space-around;  /* Reparte los 3 bloques equitativamente */
+    align-items: center;
+}
+
+.metrica-item h2 {
+    font-size: 60px;
+    font-weight: normal;
+    color: #1b1b1b;
+    margin-bottom: 5px;
+}
+
+.metrica-item p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #4b4b4b;
     font-weight: 500;
 }
 
-#descripcion-diferencial {
-    font-size: 20px;
-    color: #000;
-    font-family: 'Nunito';
-    padding-top: 20px;
-    line-height: 1.6;
-    max-width: 660px;
-    margin-bottom: 100px;
+.linea-separadora {
+    width: 80%;
+    border: 0;
+    border-top: 2.5px solid #1b1b1b;
+    margin: 40px auto 0 auto;
 }
 
-.seccion-diferencial {
-    display: flex;              /* ← cambia block por flex */
-    justify-content: space-between;  /* ← separa los elementos */
-    align-items: center;        /* ← centra verticalmente */
-    padding: 80px 50px;
+
+/*--------------------------------*/
+/*SOLUCIONES ESTRATÉGICAS*/
+/*--------------------------------*/
+
+
+.soluciones {
+    display: block;
+    text-align: center;
+    padding: 60px 0;
 }
 
-.diferencial-texto {
-    flex: 1;
-    margin-left: 80px;
-    margin-top: -60px;
-}
-
-#pregunta-dif {
-    display: flex;
-    flex-direction: column;   /* ← pregunta y botón uno debajo del otro */
-    align-items: flex-end;    /* ← alinea todo a la derecha */
-    gap: 30px;
-    margin-right: 100px;
-    margin-top: -120px;    
+.soluciones h3 {
     font-size: 40px;
-    color: #122338;
-    font-family: 'Nunito';
-    text-align: center;
-    font-weight: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #785C06;
 }
 
-.boton-agendar {
-    border: none;        /* ← quita el borde del botón */
-    cursor: pointer;     /* ← muestra la manito al pasar el mouse */
-    font-family: 'Nunito';
+.soluciones p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    color: #4b4b4b;
+}
+
+.contenedor-cards {
+    display: flex;
+    justify-content: center;   /* Centra el grupo de cuadros horizontalmente */
+    align-items: stretch;      /* Hace que todos los cuadros tengan la misma altura (muy pro) */
+    gap: 60px;                 /* El espacio exacto entre cada cuadro */
+    padding: 40px 5%;          /* 40px arriba/abajo, 5% a los lados para que no toquen el borde */
+    flex-wrap: wrap;           /* ¡Vital! Si la pantalla es chica, los cuadros bajan solitos */
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 19px;
+    padding: 40px 30px;
+    flex: 1;                    /* Hace que todos crezcan igual */
+    min-width: 250px;           /* Evita que se aplasten mucho */
+    max-width: 300px;           /* Evita que se estiren demasiado */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    border-bottom: 4px solid transparent;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #785C06;
+}
+
+.card h4 {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.card p {
+    text-align: center;
+}
+
+
+/*--------------------------------*/
+/*RESULTADOS*/
+/*--------------------------------*/
+
+
+.resultados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 0 50px;
+    gap: 150px;
+}
+
+.contenido-resultados {
+    flex: 2;                        /* Le damos más espacio al texto (60% aprox) */
+    text-align: left;
+}
+
+.gestion-contable {
+    flex: 1;
+    text-align: center;
+}
+
+.contenido-resultados h3 {
+    color: #785C06;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contenido-resultados p {
+    color: #4b4b4b;
+    max-width: 700px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.gestion-contable h3 {
+    color: #785C06;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.btn-reunion {
+    background-color: #F8BF04;  /* El naranja/dorado de tu Figma */
     color: white;
-    font-size: 16px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
     letter-spacing: 1px;
-    background-color: #ffaa2bc4;
-    border-radius: 8px;
-    margin-left: 30px;
-    margin-top: 15px;
-    padding: 20px 40px;
+}
+
+.btn-reunion:hover {
+    background-color: #d49a3d;   /* Se oscurece un poco al pasar el mouse */
 }
 
 
-/*parte final-Home*/
-.final-home {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0;
-}
-
-.logo-titulo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-finalpag {
-    width: 80px;      /* ← ajusta este valor al tamaño que quieras */
-    height: auto;
-    margin: 0;
-    flex-shrink: 0;
-}
-
-.titulofinal-home {
-    font-family: 'Nunito';
-    font-size: 30px;
-    margin: 0;
-    color: #EBE7D9;
-}
+/*--------------------------------*/
+/*FOOTER*/
+/*--------------------------------*/
 
 
-.barra-inferior { 
-    background-color: #6D644A;
-    padding: 20px 0;
-}
-
-.descrp-final {
+.barra-final {
+    background: linear-gradient(90deg, #997336 0%, #928F66 100%);
     text-align: center;
-    margin-top: 10px;
-    color: #EBE7D9;
-    font-size: 14px;
+    padding: 10px 0;
+    border-radius: 12px 12px 0px 0px; 
 }
 
-#logo-final {
-    width: 70px;
+.logo-web { 
+    height: 40px;
 }
+
+.barra-final h4 {
+    font-size: 15px;
+    color: #e0e0e0;
+
+}
+
+/*--------------------------------*/
+/*--------------------------------*/
