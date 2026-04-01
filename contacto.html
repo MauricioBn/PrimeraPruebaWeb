@@ -2,25 +2,102 @@
 <html>
   <head>
     <meta charset="utf-8" />
-      <title>Carbajal Services</title>
-      <link href="styles/style.css" rel="stylesheet" type="text/css" />
+      <title>Contacto - Carbajal Services</title>
+      <link href="styles/contacto.css" rel="stylesheet" type="text/css" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <header class="barra-superior">
-      <img src="images/logo-web.png" alt="logo Carbajal" id="logo-principal"/>
-      <div class="contenedor-titulos">
-        <h1>CARBAJAL</h1>
-        <h2 class="titulo2">SERVICIOS CONTABLES Y TRIBUTARIOS</h2>
+    <div class="hero-container">
+      <header>
+        <nav class="barra-inicial">
+          <div class="bloque-identidad">
+            <img src="images/logo-web.png" alt="logo Carbajal" id="logo-principal"/>
+            <div class="nombre-empresa">
+              <span class="nombre-brand">CARBAJAL</span> <br>
+              <span class="subtitulo-brand">SERVICIOS CONTABLES Y TRIBUTARIOS</span>
+            </div>
+          </div>
+          
+          <div class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="sectores.html">Sectores</a>
+            <a href="contacto.html">Contacto</a>
+          </div>
+
+          <a href="https://wa.me/51967512661?text=Hola,%20deseo%20agendar%20una%20asesoría%20contable" target="_blank" style="text-decoration: none;">
+            <button class="btn-asesoria">AGENDAR ASESORÍA</button>
+          </a>
+        </nav>
+      </header>
+    </div>
+
+    <section id="contacto" class="seccion-contacto">
+      <h2 class="titulo-cita">Agenda una cita</h2>
+    
+      <div class="contenedor-contacto">
+        <form class="formulario-agendar">
+          <div class="campo">
+            <label>Nombre completo</label>
+            <input type="text" placeholder="">
+          </div>
+
+          <div class="campo">
+            <label>Email <span class="requerido">*</span></label>
+            <input type="email" required>
+          </div>
+
+          <div class="campo">
+            <label>Área especializada</label>
+              <select>
+                <option value="" disabled selected>Elegir una opción</option>
+                <option value="servicios">Servicios</option>
+                <option value="hidrocarburos">Hidrocarburos</option>
+                <option value="comercial">Comercial</option>
+                <option value="minero">Minero</option>
+              </select>
+          </div>
+
+          <div class="campo">
+            <label>Detalles de consulta <span class="requerido">*</span></label>
+            <textarea rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-enviar">ENVIAR CONSULTA</button>
+        </form>
+
+        <div class="datos-contacto">
+            
+          <div class="item-dato">
+            <div class="icono-circular">✉️</div>
+            <div class="texto-dato">
+              <h3>Email</h3>
+              <p class="enlace-dato">jhaircarbajalarpe@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="item-dato">
+            <div class="icono-circular">📞</div>
+            <div class="texto-dato">
+              <h3>Central telefónica</h3>
+              <p>+51 967512661</p>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <nav class="navegacion">
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="sectores.html">Sectores</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-      <button class="boton-citas" id="btn-citas">AGENDAR ASESORIA</button>
-    </header>
+    </section>
+
+    <footer>
+      <div class="barra-final">
+        <img src="images/logo-web.png" alt="logo Carbajal" class="logo-web"/>
+        <h4>Carbajal Servicios Contables y Tributarios. Todos los derechos reservados</h4>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+<html>

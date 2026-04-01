@@ -1,0 +1,238 @@
+html {
+    background-color: #ffffff;              /* Esto es para darle color al fondo de la pagina*/ 
+    font-family: 'Nunito', sans-serif;        /*Esto es para el tipo de letra */ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;                   /* Esto ayuda a que el padding no ensanche tus cajas */
+}
+
+body {
+    background: linear-gradient(180deg, #fff 50%, #c7bb6a 100%);
+}
+/*--------------------------------*/
+/*HEADER*/
+/*--------------------------------*/
+
+
+.hero-container {
+    background-image:url('../images/imagen-sectores.jpg');
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-inicial {
+    border-radius: 19px;
+    background: linear-gradient(90deg, #997336 0%, #928F66 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin: 15px auto;
+    padding: 10px 25px;
+    min-height: 55px;
+}
+
+.bloque-identidad {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.nombre-empresa{
+    margin: 0;
+    line-height: 1.1;
+    color: #EBE7D9;
+    font-weight: 600;
+}
+
+.nombre-brand {
+    font-size: 20px;
+}
+
+.subtitulo-brand {
+    font-size: 15px;
+}
+
+#logo-principal {
+    height: 50px;
+}
+
+
+.navegacion { 
+    display: flex;                /* ← pone los enlaces en fila horizontal*/
+    gap: 40px;                    /* ← espacio entre cada enlace*/
+    align-items: center;          /* ← centra verticalmente los enlaces en la barra*/
+}
+
+.navegacion a {
+    color: #EBE7D9;             /* ← color del texto*/
+    text-decoration: none;        /* ← quita el subrayado de los enlaces*/
+    font-size: 20px;              /* ← tamaño del texto*/
+    order: 1;
+}
+
+
+.btn-asesoria {
+    background-color: #F8BF04;  /* El naranja/dorado de tu Figma */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 40px;
+    word-spacing: 30%;
+    letter-spacing: 2px;
+}
+
+.btn-asesoria:hover {
+    background-color: #d49a3d;   /* Se oscurece un poco al pasar el mouse */
+}
+
+
+/*--------------------------------*/
+/*CONTACTO*/
+/*--------------------------------*/
+
+
+.seccion-contacto {
+    padding: 80px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo-cita {
+    text-align: center;
+    font-size: 45px;
+    color: #1a2a3a; /* Un azul muy oscuro o negro elegante */
+    margin-bottom: 50px;
+}
+
+.contenedor-contacto {
+    display: flex;
+    gap: 100px;
+    padding: 0 5%;
+}
+
+/* FORMULARIO */
+.formulario-agendar {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    font-size: 14px;
+    color: #666;
+}
+
+.requerido { color: #cc0000; }
+
+.campo input, .campo select, .campo textarea {
+    padding: 12px;
+    border: 1px solid #dce0e4;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+    font-size: 16px;
+    color: #333;
+}
+
+/* DATOS DE CONTACTO */
+.datos-contacto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.item-dato {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.icono-circular {
+    width: 50px;
+    height: 50px;
+    background-color: #f3f0e6; /* Un crema suave */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.texto-dato h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+}
+
+.texto-dato p {
+    margin: 5px 0 0;
+    color: #666;
+    line-height: 1.4;
+}
+
+.enlace-dato {
+    color: #c7bb6a !important; /* El color de tu marca */
+    text-decoration: underline;
+}
+
+.btn-enviar {
+    background-color: #c7bb6a;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #785C06;
+}
+
+
+/*--------------------------------*/
+/*FOOTER*/
+/*--------------------------------*/
+
+
+.barra-final {
+    background: linear-gradient(90deg, #997336 0%, #928F66 100%);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 12px 12px 0px 0px; 
+}
+
+.logo-web { 
+    height: 40px;
+}
+
+.barra-final h4 {
+    font-size: 15px;
+    color: #e0e0e0;
+
+}
+
+/*--------------------------------*/
+/*--------------------------------*/

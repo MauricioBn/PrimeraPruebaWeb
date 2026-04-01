@@ -1,101 +1,220 @@
+
 html {
-  font-family: 'Nunito';
+    background-color: #ffffff;              /* Esto es para darle color al fondo de la pagina*/ 
+    font-family: 'Nunito', sans-serif;        /*Esto es para el tipo de letra */ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;                   /* Esto ayuda a que el padding no ensanche tus cajas */
+}
+
+body {
+    background: linear-gradient(180deg, #fff 50%, #c7bb6a 100%);
+}
+/*--------------------------------*/
+/*HEADER*/
+/*--------------------------------*/
+
+
+.hero-container {
+    background-image:url('../images/imagen-nosotros.jpg');
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-inicial {
+    border-radius: 19px;
+    background: linear-gradient(90deg, #997336 0%, #928F66 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    margin: 15px auto;
+    padding: 10px 25px;
+    min-height: 55px;
+}
+
+.bloque-identidad {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.nombre-empresa{
+    margin: 0;
+    line-height: 1.1;
+    color: #EBE7D9;
+    font-weight: 600;
+}
+
+.nombre-brand {
+    font-size: 20px;
+}
+
+.subtitulo-brand {
+    font-size: 15px;
+}
+
+#logo-principal {
+    height: 50px;
 }
 
 
-.imagen-fondo {
-  display: flex;
-  align-items: flex-start;
-  background-image: url('../images/imagen-nosotros.jpg');
-  background-size: cover;      /* ← cubre toda la sección */
-  background-position: center; /* ← centra la imagen */
-  background-repeat: no-repeat;/* ← no repite la imagen */
-  padding-bottom: 250px;
-  flex-direction: column;
-  justify-content: center;
+.navegacion { 
+    display: flex;                /* ← pone los enlaces en fila horizontal*/
+    gap: 40px;                    /* ← espacio entre cada enlace*/
+    align-items: center;          /* ← centra verticalmente los enlaces en la barra*/
 }
 
+.navegacion a {
+    color: #EBE7D9;             /* ← color del texto*/
+    text-decoration: none;        /* ← quita el subrayado de los enlaces*/
+    font-size: 20px;              /* ← tamaño del texto*/
+    order: 1;
+}
+
+
+.btn-asesoria {
+    background-color: #F8BF04;  /* El naranja/dorado de tu Figma */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 40px;
+    word-spacing: 30%;
+    letter-spacing: 2px;
+}
+
+.btn-asesoria:hover {
+    background-color: #d49a3d;   /* Se oscurece un poco al pasar el mouse */
+}
+
+
+/*--------------------------------*/
+/*SECCIÓN PRINCIPAL - VALORES*/
+/*--------------------------------*/
 
 .valores {
-  display:flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 110px;
-  margin-top: 110px;
-  margin-bottom: 110px;
+    display: flex;
+    justify-content: center;        /* Centra el grupo entero horizontalmente */
+    align-items: flex-start;        /* Alinea los iconos arriba */      
+    gap: 80px;                      /* Espacio generoso entre cada valor */
+    padding: 100px 5%;               /* Espacio arriba/abajo para que respire */
+    flex-wrap: wrap;                /* Si la pantalla es chica, se acomodan en filas */
+    max-width: 1200px;
+    margin: 0 auto;                 /* Centra el bloque en la página */
 }
 
-.valores a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
+.valores div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.valores div:hover {
+    transform: translateY(-5px);
 }
 
 .icon-valores {
-  width: 110px;
-  padding-left: 0;
-  margin-bottom: 15px; /* Espacio entre icono y texto en lugar de usar <br> */
-
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.texto-valores { 
-  display: block; /* Para que tome todo el ancho y el centrado funcione */
-  text-align: center;
-  font-family: 'Nunito';
-  text-shadow:2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.cuadros-nosotros {
-  display: flex;              /* ← cambia block por flex */
-  flex-direction: row;        /* Alinea en fila */
-  justify-content: space-between;  /* ← separa los elementos */
-  align-items: center;        /* ← centra verticalmente */
-  padding: 80px 150px;
-  gap: 50px;
-}
-
-.contenido-texto-nosotros {
-  flex: 1;                  /* Hace que el texto tome el espacio disponible */
-}
-
-.encabezados {
-  font-size: 40px;
-  text-shadow:2px 2px 8px rgba(0, 0, 0, 0.5);
-  padding-bottom: 10px;
-}
-
-.descrip-encabezados {
-  font-size: 20px;
-  max-width: 668px;
-  line-height: 1.5;
-}
-
-.imagen-ppst { 
-  width: 400px;
-  border-radius: 15px;       /* Un toque extra: bordes redondeados para elegancia */
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.2); /* Le da profundidad */
-}
-
-.cuadros-nosotros-invertido {
-  display: flex;              /* ← cambia block por flex */
-  flex-direction: row-reverse;        /* Alinea en fila */
-  justify-content: space-between;  /* ← separa los elementos */
-  align-items: center;        /* ← centra verticalmente */ 
-  padding: 80px 150px;
-  gap: 50px;
-}
-
-.barra-inferior { 
-    background-color: #6D644A;
-    padding: 20px 0;
-}
-
-
-
-.descrp-final {
+.texto-valores {
+    font-size: 16px;
     text-align: center;
-    margin-top: 10px;
-    color: #EBE7D9;
-    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
 }
+
+
+/*--------------------------------*/
+/*CUADROS*/
+/*--------------------------------*/
+
+
+.cuadro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 100px auto;
+    gap: 200px;
+}
+
+.contenido-nosotros {
+    flex: 1;
+}
+
+.titulo-contenido {
+    color: #0f0f0f;
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+
+.descripcion-contenido {
+    color: #4b4b4b;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+.imagen-contenido {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.cuadro-invertido {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 80px auto;
+    gap: 200px;
+}
+
+
+/*--------------------------------*/
+/*FOOTER*/
+/*--------------------------------*/
+
+
+.barra-final {
+    background: linear-gradient(90deg, #997336 0%, #928F66 100%);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 12px 12px 0px 0px; 
+}
+
+.logo-web { 
+    height: 40px;
+}
+
+.barra-final h4 {
+    font-size: 15px;
+    color: #e0e0e0;
+
+}
+
+/*--------------------------------*/
+/*--------------------------------*/

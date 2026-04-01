@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
       <title>Sectores - Carbajal Services</title>
-      <link href="styles/style.css" rel="stylesheet" type="text/css" />
       <link href="styles/sectores.css" rel="stylesheet" type="text/css" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,31 +10,80 @@
   </head>
 
   <body>
-    <header class="barra-superior">
-      <img src="images/logo-web.png" alt="logo Carbajal" id="logo-principal"/>
-      <div class="contenedor-titulos">
-        <h1>CARBAJAL</h1>
-        <h2 class="titulo2">SERVICIOS CONTABLES Y TRIBUTARIOS</h2>
-      </div>
-      <nav class="navegacion">
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="sectores.html">Sectores</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-      <button class="boton-citas" id="btn-citas">AGENDAR ASESORIA</button>
-    </header>
+    <div class="hero-container">
+      <header>
+        <nav class="barra-inicial">
+          <div class="bloque-identidad">
+            <img src="images/logo-web.png" alt="logo Carbajal" id="logo-principal"/>
+            <div class="nombre-empresa">
+              <span class="nombre-brand">CARBAJAL</span> <br>
+              <span class="subtitulo-brand">SERVICIOS CONTABLES Y TRIBUTARIOS</span>
+            </div>
+          </div>
+          
+          <div class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="sectores.html">Sectores</a>
+            <a href="contacto.html">Contacto</a>
+          </div>
 
-    <div class="imagen-sectores"></div>
-
-    <div class="nuestras-esp">
-      <h3>Nuestras Especilidades</h3>
+          <a href="https://wa.me/51967512661?text=Hola,%20deseo%20agendar%20una%20asesoría%20contable" target="_blank" style="text-decoration: none;">
+            <button class="btn-asesoria">AGENDAR ASESORÍA</button>
+          </a>
+        </nav>
+      </header>
     </div>
 
+    <main class="especialidades">
+      <h2>NUESTRAS ESPECIALIDADES</h2>
+      <p>Asesoría técnica especializada para garantizar el cumplimiento tributario y la solidez financiera en diversos sectores industriales.</p>
+    </main>
 
+    <section class="seccion-sectores">
+      <div class="contenedor-sectores">
 
+        <div class="sector-item s-servicios">
+          <div class="overlay"></div> 
+          <div class="contenido-sector">
+            <h3>SERVICIOS</h3>
+            <p class="desc">Optimización de procesos operativos y gestión de cumplimiento laboral para maximizar la rentabilidad en empresas de servicios profesionales y técnicos.</p>
+          </div>
+        </div>
 
+        <div class="sector-item s-hidrocarburos">
+          <div class="overlay"></div> 
+          <div class="contenido-sector">
+            <h3>HIDROCARBUROS</h3>
+            <p class="desc">Control riguroso de inventarios y gestión de impuestos específicos (ISC), garantizando el cumplimiento normativo ante organismos reguladores y la precisión financiera.</p>
+          </div>
+        </div>
+      
+        <div class="sector-item s-comercial">
+          <div class="overlay"></div> 
+          <div class="contenido-sector">
+            <h3>COMERCIAL</h3>
+            <p class="desc">Estrategias para el control de stock, gestión de flujo de caja y eficiencia tributaria en modelos de negocio retail y de distribución masiva.</p>
+          </div>
+        </div>
+      
+        <div class="sector-item s-minero">
+          <div class="overlay"></div> 
+          <div class="contenido-sector">
+            <h3>MINERO</h3>
+            <p class="desc">Contabilidad de costos especializada y auditoría de proyectos para garantizar la transparencia financiera y el estricto cumplimiento de las normativas industriales.</p>
+          </div>
+        </div>
+      
+      </div>
+    </section>
 
+    <footer>
+      <div class="barra-final">
+        <img src="images/logo-web.png" alt="logo Carbajal" class="logo-web"/>
+        <h4>Carbajal Servicios Contables y Tributarios. Todos los derechos reservados</h4>
+      </div>
+    </footer>
 
     <script src="scripts/main.js"></script>
   </body>
